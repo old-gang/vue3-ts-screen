@@ -11,9 +11,13 @@
     "fix": "eslint src --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md,cjs}\"",
     "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.6",
     "vue": "^3.2.47"
   },
   "devDependencies": {
@@ -30,9 +34,15 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.14.1",
     "husky": "^8.0.0",
+    "mockjs": "^1.1.0",
     "prettier": "^2.8.8",
+    "sass": "^1.63.3",
     "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.4",
+    "unplugin-vue-components": "^0.25.1",
     "vite": "^4.3.2",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vue-tsc": "^1.4.2"
   }
 }
